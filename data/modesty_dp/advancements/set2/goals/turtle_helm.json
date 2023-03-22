@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:turtle_helmet"
+        },
+        "title": "I Like Turtles",
+        "description": "Craft a Turtle Shell",
+        "frame": "goal"
+    },
+    "parent": "modesty_dp:set2/root",
+    "criteria": {
+        "turtle_craft": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:turtle_helmet"]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150
+    }
+}

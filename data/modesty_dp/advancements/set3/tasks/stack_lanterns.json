@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lantern"
+        },
+        "title": "Let There Be Light",
+        "description": "Craft a stack of Lanterns",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set3/root",
+    "criteria": {
+        "lantern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": ["minecraft:lantern"],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

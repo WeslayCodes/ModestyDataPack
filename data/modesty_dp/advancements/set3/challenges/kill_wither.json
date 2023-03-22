@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "title": "Aquatic Warrior",
+        "description": "Kill a Wither in an Ocean Biome",
+		"frame": "challenge"
+    },
+    "parent": "modesty_dp:set3/challenges/place_mycelium",
+    "criteria": {
+        "wither": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "minecraft:ocean"
+                    }
+                },
+                "entity": {
+                    "type": "wither"
+                }
+            }
+        }
+    },
+    "rewards": {
+		"experience": 500
+	}
+}

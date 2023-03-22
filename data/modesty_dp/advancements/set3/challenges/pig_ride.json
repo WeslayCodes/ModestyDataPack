@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick"
+        },
+        "title": "Hog Rider",
+        "description": "Ride a Pig for 5km",
+		"frame": "challenge"
+    },
+    "parent": "modesty_dp:set3/challenges/stack_exp",
+    "criteria": {
+        "pig_ride": {
+            "trigger": "minecraft:started_riding",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:pig_one_cm",
+                                "value": {
+                                    "min": 500000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+		"experience": 500
+	}
+}

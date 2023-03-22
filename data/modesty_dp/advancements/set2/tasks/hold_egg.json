@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:turtle_egg"
+        },
+        "title": "You're Not My Mother",
+        "description": "Hold a Turtle Egg",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set2/tasks/panda_hit",
+    "criteria": {
+        "placehold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:turtle_egg"],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

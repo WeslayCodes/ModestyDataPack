@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo"
+		},
+		"title": "Tough Love",
+		"description": "Get killed by a Panda",
+		"frame": "task"
+	},
+	"parent": "modesty_dp:set2/root",
+	"criteria": {
+		"panda_kill": {
+			"trigger": "minecraft:entity_killed_player",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:panda"
+				}
+			}
+		}
+	},
+    "rewards": {
+		"experience": 50
+	}
+}

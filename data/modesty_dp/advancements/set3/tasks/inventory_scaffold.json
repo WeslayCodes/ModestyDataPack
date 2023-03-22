@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scaffolding"
+        },
+        "title": "Construction Worker",
+        "description": "Have an inventory full of Scaffolding",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set3/tasks/stack_emeralds",
+    "criteria": {
+        "scaffolding": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": ["minecraft:scaffolding"],
+                        "count": 64
+                    }
+                ],
+                "slots": {
+                    "full": 36
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

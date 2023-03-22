@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:red_mushroom"
+        },
+        "title": "Back Home",
+        "description": "Place a mushroom in a Mushroom Field",
+        "frame": "goal"
+    },
+    "parent": "modesty_dp:set3/goals/chain_collect",
+    "criteria": {
+        "red_mushroom": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:red_mushroom",
+                "location": {
+                    "biome": "minecraft:mushroom_fields"
+                }
+            }
+        },
+        "brown_mushroom": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:brown_mushroom",
+                "location": {
+                    "biome": "minecraft:mushroom_fields"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "red_mushroom",
+            "brown_mushroom"
+        ]
+    ],
+    "rewards": {
+        "experience": 150
+    }
+}

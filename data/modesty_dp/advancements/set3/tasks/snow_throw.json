@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:snowball"
+        },
+        "title": "Snowball Fight",
+        "description": "Throw 1000 Snowballs",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set3/tasks/stack_lanterns",
+    "criteria": {
+        "snowball": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:used",
+                                "stat": "minecraft:snowball",
+                                "value": {
+                                    "min": 1000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

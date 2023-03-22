@@ -1,0 +1,101 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:salmon"
+        },
+        "title": "How Could You?",
+        "description": "Kill any tamable mob",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set1/tasks/nether_sleep",
+    "criteria": {
+        "cat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:cat"
+                }
+            }
+        },
+        "donkey": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:donkey"
+                }
+            }
+        },
+        "horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse"
+                }
+            }
+        },
+        "llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:llama"
+                }
+            }
+        },
+        "mule": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:mule"
+                }
+            }
+        },
+        "parrot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:parrot"
+                }
+            }
+        },
+        "skeleton_horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:skeleton_horse"
+                }
+            }
+        },
+        "wolf": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wolf"
+                }
+            }
+        },
+        "trader_llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:trader_llama"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cat",
+            "donkey",
+            "horse",
+            "llama",
+            "mule",
+            "parrot",
+            "skeleton_horse",
+            "trader_llama",
+            "wolf"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

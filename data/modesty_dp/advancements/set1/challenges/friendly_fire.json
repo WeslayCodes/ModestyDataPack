@@ -1,0 +1,30 @@
+{
+    "parent": "modesty_dp:set1/challenges/notch_apple",
+    "display": {
+        "icon": {
+            "item": "minecraft:fire_charge"
+        },
+        "title": "Friendly Fire",
+        "description": "Redirect a Ghast's Fireball into a Piglin, killing it",
+        "frame": "challenge"
+    },
+    "criteria": {
+        "killed_blaze": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:piglin"
+                },
+                "killing_blow": {
+                    "is_projectile": true,
+                    "direct_entity": {
+                        "type": "minecraft:fireball"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

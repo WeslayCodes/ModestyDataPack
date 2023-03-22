@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wet_sponge"
+        },
+        "title": "Uneasy Alliance V2",
+        "description": "Get an Elder Guardian to the Nether and kill it",
+        "frame": "challenge"
+    },
+    "parent": "modesty_dp:set1/challenges/kill_long_alive",
+    "criteria": {
+        "killed_elder_guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:elder_guardian",
+                    "location": {
+                        "dimension": "minecraft:the_nether"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

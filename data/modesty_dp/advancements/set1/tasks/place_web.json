@@ -1,0 +1,21 @@
+{
+    "parent": "modesty_dp:set1/tasks/hide_big_fern",
+    "display": {
+        "icon": {
+            "item": "minecraft:cobweb"
+        },
+        "title": "Sticky Situation",
+        "description": "Place a Cobweb"
+    },
+    "criteria": {
+        "placed_cobweb": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:cobweb"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

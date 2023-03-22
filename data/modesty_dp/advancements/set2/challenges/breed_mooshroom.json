@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brown_mushroom"
+        },
+        "title": "Mutation Enjoyer",
+        "description": "Breed two brown Mooshrooms",
+        "frame": "challenge"
+    },
+    "parent": "modesty_dp:set2/challenges/collect_arrows",
+    "criteria": {
+        "minecraft:brown_mooshroom": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "minecraft:mooshroom",
+                    "nbt": "{Type:brown}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

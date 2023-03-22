@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:large_fern"
+        },
+        "title": "Scaredy Cat",
+        "description": "Hide inside a Large Fern",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set1/tasks/furnace_minecart",
+    "criteria": {
+        "large_fern": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:large_fern"
+            }
+        }
+    },
+    "rewards": {
+		"experience": 50
+	}
+}

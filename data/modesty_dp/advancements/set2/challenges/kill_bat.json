@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brown_dye"
+        },
+        "title": "Piñata",
+        "description": "Kill a bat while Blind and Nauseated",
+        "frame": "challenge"
+    },
+    "parent": "modesty_dp:set2/challenges/breed_mooshroom",
+    "criteria": {
+        "bat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "effects": {
+                        "minecraft:nausea": {},
+                        "minecraft:blindness": {}
+                    }
+                },
+                "entity": {
+                    "type": "bat"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

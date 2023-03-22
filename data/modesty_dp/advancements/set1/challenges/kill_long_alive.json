@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "title": "Streak Ender",
+        "description": "Kill a Player that hasn't died in 7 days",
+        "frame": "challenge"
+    },
+    "parent": "modesty_dp:set1/challenges/friendly_fire",
+    "criteria": {
+        "staff": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:custom",
+                                "stat": "minecraft:time_since_death",
+                                "value": {
+                                    "min": 12096000
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

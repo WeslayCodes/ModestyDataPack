@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace_minecart"
+        },
+        "title": "Useless Transportation",
+        "description": "Fuel a Furnace Minecart",
+        "frame": "task"
+    },
+    "parent": "modesty_dp:set1/tasks/kill_pet",
+    "criteria": {
+        "furnace_cart": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:coal", 
+                        "minecraft:charcoal"
+                    ]
+                },
+                "entity": {
+                    "type": "minecraft:furnace_minecart"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}
