@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": ["minecraft:lantern"],
+                        "items": ["minecraft:lantern"],
                         "count": 64
                     }
                 ]
