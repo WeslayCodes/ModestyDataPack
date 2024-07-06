@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "id": [-1430748166,21316431,-1465218989,-1185276211],
+                    "properties": [
+                        {
+                            "name": "textures",
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkxNGM0NzNmN2JkNWQ2NDY2MTUzN2FiNzE4MmExYjIzY2JkNTM5ODg5OTVkYzgwZjZiNWViN2FjZGQyNWNmNSJ9fX0="
+                        }
+                    ]
+                }
+            }
+        },
+        "title": "Weslay's Advancements Set #1",
+        "description": "First set of Weslay's Advancements!",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/smooth_basalt.png"
+    },
+    "criteria": {
+        "auto": {
+            "trigger": "minecraft:inventory_changed" 
+        }
+    }
+}

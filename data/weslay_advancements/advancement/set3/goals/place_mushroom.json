@@ -1,0 +1,58 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:red_mushroom"
+        },
+        "title": "Fungus Among Us",
+        "description": "Place a mushroom in a Mushroom Field",
+        "frame": "goal"
+    },
+    "parent": "weslay_advancements:set3/goals/chain_collect",
+    "criteria": {
+        "red_mushroom": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"biome": "minecraft:mushroom_fields",
+							"block": {
+								"blocks": [
+									"minecraft:red_mushroom"
+								]
+							}
+						}
+					}
+                ]
+            }
+        },
+        "brown_mushroom": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"biome": "minecraft:mushroom_fields",
+							"block": {
+								"blocks": [
+									"minecraft:brown_mushroom"
+								]
+							}
+						}
+					}
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "red_mushroom",
+            "brown_mushroom"
+        ]
+    ],
+    "rewards": {
+        "experience": 150
+    }
+}

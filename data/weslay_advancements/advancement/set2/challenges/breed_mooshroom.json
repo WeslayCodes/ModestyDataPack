@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:brown_mushroom"
+        },
+        "title": "Mutation Enjoyer",
+        "description": "Breed two brown Mooshrooms",
+        "frame": "challenge"
+    },
+    "parent": "weslay_advancements:set2/challenges/collect_arrows",
+    "criteria": {
+        "breed_mooshroom": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "minecraft:mooshroom",
+                    "nbt": "{Type:brown}"
+                },
+                "partner": {
+                    "type": "minecraft:mooshroom",
+                    "nbt": "{Type:brown}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

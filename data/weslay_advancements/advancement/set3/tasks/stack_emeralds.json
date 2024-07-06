@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "title": "Villager's Buddy",
+        "description": "Obtain a stack of Emerald Blocks",
+        "frame": "task"
+    },
+    "parent": "weslay_advancements:set3/tasks/snow_throw",
+    "criteria": {
+        "emeralds": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:emerald_block"],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

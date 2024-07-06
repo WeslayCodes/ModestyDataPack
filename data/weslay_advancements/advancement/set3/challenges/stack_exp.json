@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:experience_bottle"
+        },
+        "title": "Experienced",
+        "description": "Acquire a stack of Experience Bottles",
+		"frame": "challenge"
+    },
+    "parent": "weslay_advancements:set3/root",
+    "criteria": {
+        "experience_bottles": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:experience_bottle"],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+		"experience": 500
+	}
+}

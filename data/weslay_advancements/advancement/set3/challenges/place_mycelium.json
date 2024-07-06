@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:mycelium"
+        },
+        "title": "Far From Home",
+        "description": "Place Mycelium in a Flower Forest",
+        "frame": "challenge"
+    },
+    "parent": "weslay_advancements:set3/challenges/pig_ride",
+    "criteria": {
+        "mycelium": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"biome": "minecraft:flower_forest",
+							"block": {
+								"blocks": [
+									"minecraft:mycelium"
+								]
+							}
+						}
+					}
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

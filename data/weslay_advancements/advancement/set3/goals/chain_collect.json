@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:chainmail_helmet"
+        },
+        "title": "Stylin'",
+        "description": "Wear a full set of Chainmail Armor",
+		"frame": "goal"
+    },
+    "parent": "weslay_advancements:set3/goals/jumps",
+    "criteria": {
+        "armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "items": ["minecraft:chainmail_helmet"]
+                        },
+                        "chest": {
+                            "items": ["minecraft:chainmail_chestplate"]
+                        },
+                        "legs": {
+                            "items": ["minecraft:chainmail_leggings"]
+                        },
+                        "feet": {
+                            "items": ["minecraft:chainmail_boots"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+		"experience": 150
+	}
+}

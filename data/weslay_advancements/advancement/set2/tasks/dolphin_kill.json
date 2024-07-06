@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:kelp"
+        },
+        "title": "Take and Kill",
+        "description": "Kill a Dolphin with the Dolphin's Grace Effect",
+        "frame": "task"
+    },
+    "parent": "weslay_advancements:set2/tasks/hold_egg",
+    "criteria": {
+        "dolphin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "effects": {
+                        "minecraft:dolphins_grace": {}
+                    }
+                },
+                "entity": {
+                    "type": "dolphin"
+                }
+            }
+        }
+    },
+    "rewards": {
+		"experience": 50
+	}
+}

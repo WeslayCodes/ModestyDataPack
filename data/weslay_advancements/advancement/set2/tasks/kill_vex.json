@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:arrow"
+        },
+        "title": "Sharpshooter",
+        "description": "Kill a Vex with a Projectile from 20 blocks away",
+        "frame": "task"
+    },
+    "parent": "weslay_advancements:set2/tasks/dolphin_kill",
+    "criteria": {
+        "vex": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:vex",
+                    "distance": {
+                        "horizontal": {
+                            "min": 20
+                        }
+                    }
+                },
+                "killing_blow": {
+                    "is_projectile": true
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

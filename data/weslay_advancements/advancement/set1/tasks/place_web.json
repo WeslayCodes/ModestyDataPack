@@ -1,0 +1,33 @@
+{
+    "parent": "weslay_advancements:set1/tasks/hide_big_fern",
+    "display": {
+        "icon": {
+            "id": "minecraft:cobweb"
+        },
+        "title": "Sticky Situation",
+        "description": "Place a Cobweb"
+    },
+    "criteria": {
+        "placed_cobweb": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"dimension": "minecraft:the_nether",
+							"block": {
+								"blocks": [
+									"minecraft:cobweb"
+								]
+							}
+						}
+					}
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

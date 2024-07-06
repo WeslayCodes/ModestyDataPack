@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:firework_rocket"
+        },
+        "title": "Explosive Greed",
+        "description": "Get killed by a Piglin with a Firework",
+        "frame": "challenge"
+    },
+    "parent": "weslay_advancements:set2/challenges/underwater_walk",
+    "criteria": {
+        "is_piglin_blast": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:piglin"
+                },
+                "killing_blow": {
+                    "direct_entity": {
+                        "type": "minecraft:firework_rocket"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    }
+}

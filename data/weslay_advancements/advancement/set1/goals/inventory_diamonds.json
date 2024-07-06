@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond"
+        },
+        "title": "Motivated",
+        "description": "Collect a full inventory of Diamonds",
+        "frame": "goal"
+    },
+    "parent": "weslay_advancements:set1/goals/9_stack_blueice",
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond"
+                        ],
+                        "count": 64
+                    }
+                ],
+                "slots": {
+                    "full": 36
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150
+    }
+}

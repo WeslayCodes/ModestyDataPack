@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:blue_ice"
+        },
+        "title": "Ice, Ice, Baby",
+        "description": "Get 9 stacks of Blue Ice",
+        "frame": "goal"
+    },
+    "parent": "weslay_advancements:set1/goals/stack_pickles",
+    "criteria": {
+        "blue_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:blue_ice"
+                        ],
+                        "count": 64
+                    }
+                ],
+                "slots": {
+                    "full": 9
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:sea_pickle"
+        },
+        "title": "Pickle God",
+        "description": "Get a stack of Sea Pickles",
+        "frame": "goal"
+    },
+    "parent": "weslay_advancements:set1/goals/get_flowers",
+    "criteria": {
+        "pickle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:sea_pickle"
+                        ],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150
+    }
+}

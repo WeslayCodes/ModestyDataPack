@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:dragon_head"
+        },
+        "title": "Dragon Master",
+        "description": "Kill the Ender Dragon 10 times",
+        "frame": "goal"
+    },
+    "parent": "weslay_advancements:set2/goals/magma_kill",
+    "criteria": {
+        "kill_drags": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ender_dragon"
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "stats": [
+                            {
+                                "type": "minecraft:killed",
+                                "stat": "minecraft:ender_dragon",
+                                "value": {
+                                    "min": 9
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 150
+    }
+}

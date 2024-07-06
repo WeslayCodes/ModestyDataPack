@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:lantern"
+        },
+        "title": "Let There Be Light",
+        "description": "Craft a stack of Lanterns",
+        "frame": "task"
+    },
+    "parent": "weslay_advancements:set3/root",
+    "criteria": {
+        "lantern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:lantern",
+                            "minecraft:soul_lantern"
+                        ],
+                        "count": 64
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

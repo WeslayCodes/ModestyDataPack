@@ -1,0 +1,49 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:black_bed"
+		},
+		"title": "What Could Go Wrong?",
+		"description": "Place a Bed in The Nether",
+		"frame": "task"
+	},
+	"parent": "weslay_advancements:set1/root",
+	"criteria": {
+		"bed_placed": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"dimension": "minecraft:the_nether",
+							"block": {
+								"blocks": [
+									"minecraft:white_bed",
+									"minecraft:orange_bed",
+									"minecraft:magenta_bed",
+									"minecraft:light_blue_bed",
+									"minecraft:yellow_bed",
+									"minecraft:lime_bed",
+									"minecraft:pink_bed",
+									"minecraft:gray_bed",
+									"minecraft:light_gray_bed",
+									"minecraft:cyan_bed",
+									"minecraft:purple_bed",
+									"minecraft:blue_bed",
+									"minecraft:brown_bed",
+									"minecraft:green_bed",
+									"minecraft:red_bed",
+									"minecraft:black_bed"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"experience": 50
+	}
+}
